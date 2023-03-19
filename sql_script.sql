@@ -22,3 +22,11 @@ string_col varchar(300)
 -- checking the table
 select * from python_postgres_tutorial.test_table_1;
 
+-- inserting some value in the table
+insert into python_postgres_tutorial.test_table_1 values
+(1,'test string 1'),
+(2, 'test string 2')
+;
+
+
+
