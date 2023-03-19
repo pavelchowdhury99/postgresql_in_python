@@ -1,18 +1,9 @@
--- creating a sample test table
-create table test_table_1 (
-id int primary key,
-string_col varchar(300)
-)
-;
-
--- checking the table
-select * from test_table_1
-
 -- creating a new schema
-create schema python_postgres_tutorial;
+create schema if not exists python_postgres_tutorial;
+
 
 -- creating a sample table inside a different schema
-create table python_postgres_tutorial.test_table_1 (
+create table if not exists python_postgres_tutorial.test_table_1 (
 id int primary key,
 string_col varchar(300)
 )
@@ -30,3 +21,4 @@ insert into python_postgres_tutorial.test_table_1 values
 
 
 
+--delete from python_postgres_tutorial.test_table_1 where 1=1;
